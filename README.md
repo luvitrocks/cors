@@ -15,6 +15,25 @@ app:use(cors())
 app:listen(3000)
 ```
 
+## `cors(options)`
+
+```lua
+[[
+  CORS middleware
+
+  @param {Table} [options]
+    - {String|Function(req, res)} origin `Access-Control-Allow-Origin`, default is '*'
+    - {String} allowMethods `Access-Control-Allow-Methods`, default is 'GET,HEAD,PUT,POST,DELETE,PATCH'
+    - {String} exposeHeaders `Access-Control-Expose-Headers`
+    - {String} allowHeaders `Access-Control-Allow-Headers`
+    - {String} maxAge `Access-Control-Max-Age` in seconds
+    - {Boolean} credentials `Access-Control-Allow-Credentials`
+  
+  @return {Function}
+  @api public
+]]
+```
+
 ## License
 
 MIT Licensed

@@ -15,10 +15,12 @@ app:use(cors())
 app:listen(3000)
 ```
 
-## `cors(options)`
+## API
+
+### ``cors(options)``
 
 ```lua
-[[
+--[[
   CORS middleware
 
   @param {Table} [options]
